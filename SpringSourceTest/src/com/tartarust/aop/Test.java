@@ -21,5 +21,7 @@ public class Test {
         abstractDefined.save("Double J");   
 //        abstractDefined.save("Float J");   
           
+		// 生成动态代理class文件
+//        ProxyUtils.generateClassFile(new AbstractDefined().getClass(), "ElectricCarProxy");
     }   
 }
