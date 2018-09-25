@@ -1,4 +1,4 @@
-package com.tartarust.aop.xiexia;
+package com.limbo.test.aop.xiexia;
 
 class Human {
 	public static void main(String[] args) throws Exception {

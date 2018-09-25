@@ -1,4 +1,4 @@
-package com.tartarust.aop.jdk;
+package com.limbo.test.aop.jdk;
 
 import java.lang.reflect.Method;
 
@@ -13,7 +13,6 @@ public class LoggerOperation implements IOperation{
 	 * 开始日志
 	 * @param method
 	 */
-	@Override
 	public void start(Method method) {
 		Logger.logging(Level.INFO, method.getName() + " Method Start!");
 	}
@@ -22,7 +21,6 @@ public class LoggerOperation implements IOperation{
 	 * 结束日志
 	 * @param method
 	 */
-	@Override
 	public void end(Method method) {
 		Logger.logging(Level.DEBUGE, method.getName() + " Method end!");
 	} 

@@ -1,4 +1,4 @@
-package com.tartarust.aop.jdk;
+package com.limbo.test.aop.jdk;
 
 /**
  * 测试类
@@ -19,7 +19,7 @@ public class Test {
         	.bind(new AbstractDefined(),new LoggerOperation()); 
         // save方法
         abstractDefined.save("Double J");   
-//        abstractDefined.save("Float J");   
+        abstractDefined.save("Float J");
           
 		// 生成动态代理class文件
 //        ProxyUtils.generateClassFile(new AbstractDefined().getClass(), "ElectricCarProxy");

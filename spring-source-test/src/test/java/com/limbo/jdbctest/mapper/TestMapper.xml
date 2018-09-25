@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<mapper namespace="com.xxt.ibatis.dbcp.dao.UserDao">
+    <resultMap type="User" id="userMap">
+        <id property="id" column="id" />
+        <result property="name" column="name" />
+        <result property="password" column="password" />
+        <result property="createTime" column="createtime" />
+    </resultMap>
+    <select id="getUserById" parameterType="int" resultMap="userMap">
+        select * from user where id = #{id}
+    </select>
+<mapper/>

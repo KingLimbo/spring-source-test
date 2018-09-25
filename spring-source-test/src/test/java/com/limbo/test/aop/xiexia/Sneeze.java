@@ -1,4 +1,4 @@
-package com.tartarust.aop.xiexia;
+package com.limbo.test.aop.xiexia;
 
 
 public class Sneeze extends Annoyance{

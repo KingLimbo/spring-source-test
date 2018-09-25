@@ -1,6 +1,6 @@
-package com.tartarust.aop.cglib;
+package com.limbo.test.aop.cglib;
 
-import net.sf.cglib.proxy.Enhancer;
+import org.springframework.cglib.proxy.Enhancer;
 
 /**
  * 测试类

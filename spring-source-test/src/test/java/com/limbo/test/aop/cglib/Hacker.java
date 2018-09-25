@@ -1,9 +1,9 @@
-package com.tartarust.aop.cglib;
+package com.limbo.test.aop.cglib;
 
 import java.lang.reflect.Method;
 
-import net.sf.cglib.proxy.MethodInterceptor;
-import net.sf.cglib.proxy.MethodProxy;
+import org.springframework.cglib.proxy.MethodInterceptor;
+import org.springframework.cglib.proxy.MethodProxy;
 
 /**
  * 实现了方法拦截器接口
@@ -17,7 +17,6 @@ public class Hacker implements MethodInterceptor {
 	 * 拦截方法
 	 * 
 	 */
-	@Override
 	public Object intercept(Object obj, Method method, Object[] args,
 			MethodProxy proxy) throws Throwable {
 		// 前置方法

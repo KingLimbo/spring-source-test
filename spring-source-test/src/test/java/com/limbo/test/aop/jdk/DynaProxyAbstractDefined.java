@@ -1,4 +1,4 @@
-package com.tartarust.aop.jdk;
+package com.limbo.test.aop.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -48,8 +48,6 @@ public class DynaProxyAbstractDefined implements InvocationHandler {
 	 * @return Object
 	 * @throws Throwable
 	 */
-	@SuppressWarnings({ "unchecked", "rawtypes" })
-	@Override
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
 		// 定义返回变量
