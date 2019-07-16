@@ -1,4 +1,4 @@
-package com.limbo.test.aop.jdk;
+package com.limbo.learning.pattern.proxyPattern.jdk;
 
 import java.lang.reflect.Method;
 

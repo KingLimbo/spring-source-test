@@ -1,9 +1,9 @@
-package com.limbo.test.aop.jdk;
+package com.limbo.learning.pattern.proxyPattern.jdk;
+
+import sun.misc.ProxyGenerator;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-
-import sun.misc.ProxyGenerator;
 
 /**
  * 动态代理类字节码生成工具

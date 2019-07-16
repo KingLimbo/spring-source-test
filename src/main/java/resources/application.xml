@@ -13,7 +13,7 @@
     <!-- 自动扫描(自动注入) -->
     <context:component-scan base-package="com.limbo.**.service"/>
 
-    <context:property-placeholder location="jdbc.properties"/>
+    <context:property-placeholder location="resources/jdbc.properties"/>
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <!-- 基本属性 url、user、password -->
         <property name="url" value="${jdbc.url}"/>
@@ -50,7 +50,7 @@
     <!-- sqlSessionFactory -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="configLocation" value="mybatis-config.xml"/>
+        <property name="configLocation" value="resources/mybatis-config.xml"/>
         <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
         <property name="mapperLocations" value="classpath:com/limbo/**/mapper/*Mapper.xml"/>
     </bean>
